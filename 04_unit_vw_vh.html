@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>viewport unit</title>
+    <style>
+        header {
+            width: 100vw;
+            background-color: palegreen;
+        }
+        /* 브라우저 화면을 늘려도 줄여도 어떤 크기에서도 하단 스크롤바가 생기는 이유는 body(부모요소) 보다 header(자식요소) 사이즈가 크기 때문이다. */
+        .parent {
+            width: 600px;
+            background-color: beige;
+        }
+        .child {
+            width: 50%;
+            background-color: pink;
+            height: 50vh;
+        }
+        .child2 {
+            width: 50vw;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Logo</h1>
+    </header>
+    <hr>
+    <div class="parent">
+        <div class="child">Percent</div>
+        <div class="child2">vw</div>
+    </div>
+</body>
+
+</html>
+
+<!-- vw (viewport width), vh(viewport height) : viewport 대비 비율. viewport는 스크롤바까지 포함된 사이즈이다. -->
