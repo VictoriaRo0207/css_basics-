@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부정 선택자</title>
+    <style>
+        header *:not(h1) {
+            color: olivedrab;
+        }
+        /* header * >>>헤더 전체에 css 적용
+            :not(h1) h1태그만 빼고 
+            나중에 header 내에 다른 요소가 추가되더라도 동일하게 css가 적용된다*/
+        li:not(:last-child) {
+            color: rgb(243, 82, 42);
+        }
+        /* 마지막 li 태그를 제외한 모두에게 css 적용 */
+    </style>
+</head>
+
+<body>
+    <h1>부정 선택자</h1>
+    <header>
+        <h1>logo</h1>
+        <h2>main title</h2>
+        <p>Brief Description</p>
+        <a href="">read more</a>
+    </header>
+    <ul>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+    </ul>
+</body>
+
+</html>
+<!-- 부정 선택자
+    :not() >>> 괄호 안에 있는 태그만 제외하고 나머지에 css 적용-->

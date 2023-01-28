@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checked Selector</title>
+    <style>
+        #policy:target {
+            background-color: green;
+            color: #fff;
+        }
+        input:checked + label{
+            background: springgreen;
+        }
+        button:disabled {
+            background: grey;
+            color: rgb(199, 196, 193);
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#policy">약관보기</a>
+    <form action="">
+
+        <input type="radio" name="newsletter" id="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" name="newsletter" id="no">
+        <label for="no">no</label>
+        <hr>
+        <input type="checkbox" id="agree">
+        <label for="agree">동의</label>
+        <hr>
+        <button disabled>전송</button>
+
+    </form>
+    <div id="policy">
+        <h2>약관안내</h2>
+    </div>
+
+</body>
+
+</html>
+<!-- 상태 선택자 
+    #policy(요소):target >>> 요소 입장에서 요소가 링크를 클릭해서 타겟을 받으면 css 적용
+    :checked >>> radio, checkbox 가 클릭, 활성화가 됐을 때 + 뒤에 오는 요소에 css 적용 
+    :disabled >>> 비활성화 된 곳에 css 적용할 때  -->
