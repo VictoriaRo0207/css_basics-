@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-class Selector</title>
+    <style>
+        h1:hover {
+            background-color: sandybrown;
+        }
+        :link {
+            font-size: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        :visited {
+            color: red;
+        }
+        a:focus {
+            background-color: blue;
+            color: #fff;
+        }
+        a:active {
+            background-color: lightseagreen;
+            color: lightcoral;
+        }
+        input, button {
+            outline: none;
+        }
+        input:focus, button:focus {
+            background: yellowgreen;
+            color: #fff;
+        }
+        form:focus-within {
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pseudo-class Selector</h1>
+    <p>
+        <a href="">link</a>
+        <a href="">링크</a>
+    </p>
+    <form action="">
+        <input type="text">
+        <button>send</button>
+    </form>
+</body>
+
+</html>
+<!-- 의사 클래스 선택자 
+    :로 시작하는 대부분은 의사 클래스 선택자에 속한다. -->
+<!-- :hover >>> 마우스를 해당 요소에 올라갔을 때 요소에 css가 적용되도록 하는 선택자 
+    :link >>> 링크 태그 모두 선택 
+    :visited >>> 이미 클릭한 링크, 방문한 링크 표시
+    :focus >>> tap 키를 눌러 선택했을 때 포커스되는 요소에 css 적용할 때  :active >>> 누르는 순간 
+    :focus-within >>> 선택자로 사용된 요소의 자식 요소에 포커스가 걸리면 선택자의 css를 변경하고 싶을 때 사용되는 의사 클래스 선택자-->
