@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css priority</title>
+    <style>
+        #desc {
+            color: lightblue;
+        }
+        .main-content p {
+            color: red;
+        }
+        p {
+            color: aqua !important;
+        }
+        p {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS 우선순위</h1>
+    <section class="main-content">
+        <h2>section title</h2>
+        <p id="desc" style="color: hotpink;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quas perspiciatis, nobis hic quo tempore, iusto esse culpa consequuntur exercitationem, officiis enim iure. Excepturi voluptate, expedita dolor eaque quidem cumque.
+        </p>
+        <p style="color: hotpink;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quas perspiciatis, nobis hic quo tempore, iusto esse culpa consequuntur exercitationem, officiis enim iure. Excepturi voluptate, expedita dolor eaque quidem cumque.
+        </p>
+    </section>
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, illum. Totam corrupti, eum esse inventore accusantium illo ab enim, delectus exercitationem doloribus nesciunt amet! Aliquid, facere rerum. Blanditiis, laudantium ex.</p>
+    </section>
+</body>
+</html>
+<!-- 선택자 우선순위
+    cascading style sheet
+    1. 동일한 선태자를 썼을 때 최근 작성한 css가 우선순위가 되어 적용됨
+    2. 얼마나 구체적으로 선택
+    3. clss < id 아이디가 더 우선순위
+    우선순위 참고 : * < tag < class < id < inline style(직접 스타일 주는 방법) < !important -->
