@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구글 웹폰트</title>
+    <!-- 1. 링크로 구현하는 방식  -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet"> -->
+    
+    <style>
+        /* 2. 임폴트로 구현하는 방식 */
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+        
+        p {font-family: 'Nanum Myeongjo', serif;}
+    </style>
+</head>
+
+<body>
+    <h1>폰트 적용하기</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium optio corporis ex repellendus impedit ipsa
+        debitis quo, velit officia nemo eveniet quam magnam labore consequatur minus voluptatum perspiciatis. Vero,
+        magni.
+    </p>
+
+
+</body>
+
+</html>
+<!-- CDN 방식으로 구현 
+    fonts.google.com 에서 원하는 폰트를 선택 
+    1. link로 적용하는 방법
+    2. @import로 적용하는 방법 (css 안에 작성해 준다)
+    두가지 방법 중 원하는 방법 선택 후 폰트를 적요하고자 하는 선택자에 css 적용-->
