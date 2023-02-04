@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .box {
+            width: 500px;
+            /* padding: 10px 20px 50px 5px ; */
+            /* padding-right: 50px; */
+            padding: 20px;
+            
+            border: 1px solid;
+            /* border-width: 10px 20px 50px 5px ;
+            border-style: solid dashed dotted;
+            border-color: #ccc #000 #f00; */
+            /* border-right: 10px solid red; */
+            
+            /* margin: 50px 100px; */
+            /* margin-left: 100px; */
+            margin: 0 auto;
+            /* 화면 정 중앙에 요소가 오도록 할 수 있다. 화면 사이즈가 변하면 그에 맞게 요소 중앙에 자동으로 맞춰짐 
+            주의할 점은 요소의 너비값이 존재해야 마진영오토가 작동한다 요소에 너비 지정을하지 않으면 화면 전체를 차지하기 때문에 정 중앙에 배치되지 않음  */
+        }
+        /* 값 1개 = 상하좌우 모든 방향에 값을 적용  
+            값 2개 = 10px 20px >>> 상하 / 좌우  
+            값 3개 = 10px 20px 50px >>> 상 / 좌우 / 하
+            값 4개 = 10px 20px 50px 5px >>> 상 / 우 / 하 /좌 시계방향으로 값 설정 됨 */
+        /* 패딩 값은 상하좌우 한쪽만 지정해서 설정할 수 있다 */
+        /* border 또한 스타일을 각각 다르게 표현할 수 있다 각 면에 사이즈 색상 및 스타일을 다르게 지정해줄 수 있음
+        또 패딩과 마찬가지로 left right top bottom 을 지정해서 한쪽에만 값을 적용할 수 있다*/
+        /* margin: 50px 100px; 상하 / 좌우 에 마진주기
+        left right top bottom 을 지정해서 마진값 줄수 있다*/
+        
+    </style>
+</head>
+
+<body>
+    <h1>Box Model</h1>
+    <h2>padding</h2>
+    <div class="box">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed aspernatur reprehenderit blanditiis velit
+            consectetur quibusdam, debitis similique earum cupiditate numquam! Enim, saepe. Aliquid veritatis ex eaque
+            voluptatibus earum. Repellat, non.</p>
+    </div>
+
+
+</body>
+
+</html>

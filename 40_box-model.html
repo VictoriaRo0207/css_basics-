@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .box {
+            width: 500px;
+        } 
+        .padding {
+            padding: 20px;
+        } 
+        .border {
+            border: 10px solid #ccc;
+        }
+        .margin {
+            margin: 50px;
+        }
+        .bg {
+            background: rgb(252, 141, 151);
+            border-style: dashed;
+        }
+        /* 요소의 크기는 보더까지 이다 ! */
+        .content-box {
+            box-sizing: content-box;
+        }
+        /* 박스모델은 기본으로 보더까지 포함한게 실제 요소의 크기로 개발자 도구에서 확인해보면 컨텐트 너비인 500과 패딩 20, 보더10 을 포함 총 560을 차지한다 */
+        .border-box {
+            box-sizing: border-box;
+        }
+        /* 박스 사이징을 보더 박스로 설정할 경우 보더까지 포함한 너비가 내가 지정한 500px로 맞춰진다. 이때 컨텐츠 너비는 패딩값과 보더값을 뺀 440이 된다 >> 개발자 도구 확인해보기*/
+    </style>
+</head>
+
+<body>
+    <h1>Box Model</h1>
+    <h2>content</h2>
+    <div class="box content">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed aspernatur reprehenderit blanditiis velit
+            consectetur quibusdam, debitis similique earum cupiditate numquam! Enim, saepe. Aliquid veritatis ex eaque
+            voluptatibus earum. Repellat, non.</p>
+    </div>
+    <div class="box padding">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed aspernatur reprehenderit blanditiis velit
+            consectetur quibusdam, debitis similique earum cupiditate numquam! Enim, saepe. Aliquid veritatis ex eaque
+            voluptatibus earum. Repellat, non.</p>
+    </div>
+    <div class="box padding border">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed aspernatur reprehenderit blanditiis velit
+            consectetur quibusdam, debitis similique earum cupiditate numquam! Enim, saepe. Aliquid veritatis ex eaque
+            voluptatibus earum. Repellat, non.</p>
+    </div>
+    <div class="box padding border margin">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed aspernatur reprehenderit blanditiis velit
+            consectetur quibusdam, debitis similique earum cupiditate numquam! Enim, saepe. Aliquid veritatis ex eaque
+            voluptatibus earum. Repellat, non.</p>
+    </div>
+    <div class="box padding border margin bg">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed aspernatur reprehenderit blanditiis velit
+            consectetur quibusdam, debitis similique earum cupiditate numquam! Enim, saepe. Aliquid veritatis ex eaque
+            voluptatibus earum. Repellat, non.</p>
+    </div>
+    <hr>
+    <div class="box padding border margin content-box">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed aspernatur reprehenderit blanditiis velit
+            consectetur quibusdam, debitis similique earum cupiditate numquam! Enim, saepe. Aliquid veritatis ex eaque
+            voluptatibus earum. Repellat, non.</p>
+    </div>
+    <div class="box padding border margin border-box">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed aspernatur reprehenderit blanditiis velit
+            consectetur quibusdam, debitis similique earum cupiditate numquam! Enim, saepe. Aliquid veritatis ex eaque
+            voluptatibus earum. Repellat, non.</p>
+    </div>
+
+
+</body>
+
+</html>
+<!-- content : 내용인 요소가 표시되는 곳
+     padding : content 밖의 여백부분
+     border : content의 테두리
+     margin : border 바깥쪽 공간-->
