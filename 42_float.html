@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        h1 {
+            /* text-align: right; */
+            /* float: right; */
+        }
+        /* float 적용된 요소가 해당 방향으로 이동한다. */
+        span {
+            width: 200px;
+            background: green;
+            color: aliceblue;
+            /* float: left; */
+        }
+        /* float 적용된 요소의 크기가 해당 요소 안의 콘텐츠(내용) 크기만큼 자동으로 인지된다. >>> 해당 요소가 인라인 요소라도 크기가 인지된다. 인라인 요소 원래 크기 인지 못함 적용 안됨 */
+        img {
+            float: right;
+        }
+        /* float 적용된 요소를 뒤따라오는 요소들이 달려든다 (플롯 요소에 붙는다? 이해는 되는데 설명이 어렵네 ) */
+        .clear {
+            /* clear: left; */
+            /* clear: right; */
+            clear: both;
+        }
+        /* 달려드는 속성을 해지해 줘야만 뒤따라오는 요소들을 다시 배치할 수 있다. clrear : float 해지 속성 */
+    </style>
+</head>
+
+<body>
+    <h1>Float</h1>
+    <hr>
+    <span>inline element</span>
+    <hr>
+    <img src="https://via.placeholder.com/100" alt="">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe vitae reprehenderit exercitationem praesentium
+        tempora placeat quod illo sunt maxime aut necessitatibus sint ea
+        officia ab, quaerat assumenda odio iste fuga?</p>
+    <p class="clear">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe vitae reprehenderit exercitationem
+        praesentium
+        tempora placeat quod illo sunt maxime aut necessitatibus sint ea officia ab, quaerat assumenda odio iste fuga?
+    </p>
+
+
+</body>
+
+</html>
+<!-- 레이아웃 positioning style 
+     float >>> 전통적인 방법, 좌우
+     display : flex >>> float에서 발전한 단계
+     grid  --> 

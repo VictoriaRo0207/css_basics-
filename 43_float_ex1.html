@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float exercise1</title>
+    <style>
+        .portfolio_list {
+            width: 860px;
+            margin: 0 auto;
+            padding: 10px;
+            background: #ebebeb;
+            list-style: none;
+        }
+        .portfolio_list li {
+            float: left;
+            margin-right: 20px;
+        }
+        .portfolio_list li:last-child {
+            margin-right: 0;
+        } 
+        /* .portfolio_list:after {
+            content: ' ';
+            clear: both;
+            display: block;
+        } */
+        /* :after 는 인라인 요소이고 인라인 요소에는 클리어가 적용이 되지 않는다  */
+        .clearfix:after {
+            content: ' ';
+            clear: both;
+            display: block;
+        }
+        /* 웹사이트에 플롯 요소가 많을 때 각각에 클리어 속성을 주기에는 나중에 유지보수가 어렵기 때문에 위와 같이 .clearfix:after 로 css 지정을 해주고 html 에 각각 클래스를 추가해 준다  */
+    </style>
+</head>
+
+<body>
+    <h1>Portfolio List</h1>
+    <ul class="portfolio_list clearfix">
+        <li>
+            <img src="https://via.placeholder.com/200" alt="">
+        </li>
+        <li>
+            <img src="https://via.placeholder.com/200" alt="">
+        </li>
+        <li>
+            <img src="https://via.placeholder.com/200" alt="">
+        </li>
+        <li>
+            <img src="https://via.placeholder.com/200" alt="">
+        </li>
+    </ul>
+
+
+
+</body>
+
+</html>
+<!-- 강의 이해가 안가는건 아니지만 어렵고 확실히 이해하지 못하겠음 몇번 반복학습 해야할 것 같다 -->
