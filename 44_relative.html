@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position relative</title>
+    <style>
+
+    .relative{
+        position: relative;
+        left: 100px;
+        top: 50px;
+        border: 1px solid;
+    }
+    /* 부모 태그인 figure 가 같이 움직이는게 아닌 자기 자신을 기준으로 이미지만와 피규어 캡션만 왼쪽으로부터 50px 이동 위로부터 50px 가상으로 이동한 것이다  */
+    /* 마진을 줘서 공간을 만드는 것은 부모 태그인 피규어가 같이 움직이는 거로 전체 요소들이 밀려난다 */
+    
+    </style>
+</head>
+
+<body>
+    <h1>Position relative</h1>
+
+    <figure class="relative">
+        <img src="http://place-hold.it/200x200" alt="">
+        <figcaption>image description</figcaption>
+    </figure>
+
+    <figure>
+        <img src="http://place-hold.it/200x200" alt="">
+        <figcaption>image description</figcaption>
+    </figure>
+
+</body>
+</html>
+<!-- 포지션 >>> 누군가를 기준으로 요소를 자유자제로 배치할 때 필수적인 속성!
+    position : static (기본값) | absolute (절대값) | fixed (고정) | relative(자기자신을 기준으로) | sticky (특정 스크롤 생겼을 때 고정)-->
+<!-- relative 
+    1. 위치와 크기가 변하지 않는다.
+    2. 원래 위치를 기준으로 left, right, top, bottom 값으로 위치를 조정한다.
+    3. left, right, top, bottom 가상으로 움직임 -->

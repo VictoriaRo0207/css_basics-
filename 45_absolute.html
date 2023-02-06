@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position absolute</title>
+    <style>
+
+        .banner{
+            border:1px solid;
+            padding:20px;
+            position: absolute;
+           top: 0px;
+           left: 0px;
+        }
+        section {
+            position: relative;
+            border: 1px solid;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Position absolute</h1>
+    <section>
+        <div class="banner">
+            <img src="https://via.placeholder.com/200" alt="">
+        </div>
+        <h2>Main content</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet tempore laudantium eius. Nemo, eveniet. Quis dolorum fuga amet molestiae, iusto optio. Alias tempore tenetur similique beatae vero quae fuga molestias?</p>
+        
+    </section>
+
+</body>
+</html>
+<!-- absolute
+    1. 요소의 위치를 다른 요소들이 모르게 된다. (붕뜬다) 
+    2. 요소의 크기가 내용의 크기로 축소된다.
+    3. 가까운 부모 중 position 속성의 값이 기본값이 아닌 요소를 기준으로 배치된다.
+    4. 기준이 없다면 브라우저 화면이 기준이 된다.
+    5. left, right, top, bottom 값으로 위치를 설정한다 -->
