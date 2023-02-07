@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box basic</title>
+    <style>
+        body {
+            text-align: center;
+        } 
+        .parent {
+            display: inline-flex;
+        }
+        /* display: inline-flex; 는 display: inline-block; 과 비슷한 성격을 가지고 있어서 바디에 텍스트 얼라인을 센터로 줬을 때 가운데 정렬이 가능하다 */
+        
+        /* .parent {
+            display: inline-flex;
+        } */
+        .parent div {
+            background: #ebebeb;
+            border: #ccc 1px solid;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div>Flex-item</div>
+        <div>Flex-item</div>
+        <div>Flex-item</div>
+    </div>
+
+</body>
+
+</html> 
+<!-- flexible layout
+    주축과 교차측을 알아야한다
+    display: flex; 는 요소들을 아이템화 해서 가로로 배치한다  -->

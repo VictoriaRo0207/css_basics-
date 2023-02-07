@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-direction</title>
+    <style>
+        .wrap {
+            height: 500px;
+            margin: 20px auto;
+            display: flex;
+            border: 1px solid #ccc;
+            flex-direction: column-reverse;
+        }
+        /* flex-direction >>> flex의 방향 지정
+            flex-direction: row; 기본값
+            flex-direction: row-reverse; 주축의 시작점이 오른쪽이 된다    
+            flex-direction: column; 주축의 방향이 위에서 아래로
+            flex-direction: column-reverse; 주측의 방향이 아래에서 위로 reverse 됨 */
+
+        .wrap div {
+            padding: 10px;
+        }
+
+        .wrap div:first-child {
+            background: red;
+        }
+
+        .wrap div:nth-child(2) {
+            background: blue;
+            color: #fff;
+        }
+
+        .wrap div:nth-child(3) {
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div>box1</div>
+        <div>box2</div>
+        <div>box3</div>
+    </div>
+
+</body>
+
+</html>

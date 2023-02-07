@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-content</title>
+    <style>
+        .parent {
+            width: 500px;
+            margin: 20px;
+            border: 1px solid;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .parent div {
+            width: 50px;
+            height: 50px;
+            background: #ebebeb;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>justify-content</h1>
+    <div class="parent">
+        <div>box1</div>
+        <div>box2</div>
+        <div>box3</div>
+    </div>
+</body>
+
+</html>
+<!--주측 자유롭게 배치 
+    justify-content:flex-srart; 주축부터 채워가라 하는게 기본값임 
+    flex-end >>> 주측 끝부터 배치
+    center >>> 가운데 배치 
+    space-between >>> 요소와 요소 사이에 자동으로 공간생성
+    space-aroud >>> 각 요소의 양 옆에 공간생성 
+    space-evenly >>> 균일하게 공간생성 -->
