@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <style>
+        .parent {
+            width: 600px;
+            display: flex;
+        }
+
+        .parent div {
+            width: 200px;
+            height: 50px;
+            background: #ebebeb;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-transform: uppercase;
+        }
+
+        .parent div:first-child {
+            /* order: 2; */
+        }
+        .parent div:nth-child(2) {
+            /* order: 3; */
+            order: -1;
+        }
+        .parent div:nth-child(3) {
+            /* order: 1; */
+        }
+        /* html을 변경하지 않고 css 만으로도 요소를 변경할 수 있어서 굉장히 유용함 */
+       
+    </style>
+</head>
+
+<body>
+    <h1>order</h1>
+    <div class="parent">
+        <div>box1</div>
+        <div>box2</div>
+        <div>box3</div>
+    </div>
+</body>
+
+</html>
