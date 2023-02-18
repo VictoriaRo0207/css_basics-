@@ -26,6 +26,8 @@
         .shrink div {
             width: 200px;
         }
+
+
         .grow {
             flex-grow: 1;
         }
@@ -37,30 +39,51 @@
         /* flex-shrink : 넘치는 공간을 줄여서 채우는 속성
             shrink 속성의 기본값은 1 = 100% 이다 */
         .basis {
-            flex-basis: 50%;
+            flex-basis: 100px;
         }
-        /* flex-basis : 크기 지정 
-            픽셀 또는 % 로 크기 지정 가능하고 %는 부모의 크기 대비 크기 적용이 된다 
-            기본값은 0 이다*/
+        /* flex-basis : 기본 크기 지정 
+            픽셀 또는 % 로 크기 지정 가능하고 
+            %는 부모의 크기 대비 크기 적용이 된다 
+            기본값은 0 이다 (콘텐츠 크기 만큼 반영) */
+        
         /* .all div {
             flex: 1 1 0;
         } */
         /* grow shrink basis 순으로 기본값이 지정된 것  */
-        .all div:first-child {
-            flex: 1 ;
+
+        /* .all div:first-child {
+            flex: 1 1 0;
         }
-        .all div:nth-child() {
-            flex: 1 ;
+        .all div:nth-child(2) {
+            flex: 1 1 0 ;
         }
         .all div:last-child {
-            flex: 1 ;
-        }
+            flex: 2 1 0 ;
+        } */
         /* 각 요소들이 1:1:2 비율로 배치된다 */
         /* 애니메이션을 배우고 나서 마우스를 올렸을 때 크기 키워주기 등에 사용할 수 있다 */
+
+
+        /* 애니메이션 예제 적용 : 마우스를 올렸을 때 마지막 요소 비율 2로 늘어나게 */
+        .all div {
+            transition: 0.3s;
+        }
+        .all div:first-child {
+            flex: 1;
+        }
+        .all div:nth-child(2) {
+            flex: 1;
+        }
+        .all div:last-child {
+            flex: 1;
+        }
+        /* 1:1:1 로 비율 설정 
+            뒤에 1 0 은 생략 가능 */
         .all div:hover {
             flex: 2;
         }
-        /* 예제 적용 */
+        /* 호버 사용해서 마우스 올렸을 때 비율 2로 늘어나게 해주기 */
+        
     </style>
 </head>
 
@@ -71,6 +94,7 @@
         <div>box1</div>
         <div>box2</div>
         <div class="grow">box3</div>
+        
     </div>
     <h2>flex-shrink</h2>
     <div class="parent shrink">
@@ -93,6 +117,3 @@
 </body>
 
 </html>
-<!-- 
-    
-    flex-basis : 크기 지정 -->
