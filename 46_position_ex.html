@@ -28,11 +28,14 @@
         .prev {
             right: calc(100% + 20px);
         }
+        /* 위에처럼 해주는 이유는 콘텐츠 내용에 따라 사이즈가 변하더라도 prev/next 는 변한 내용에 맞춰서 내가 원한 위치에 맞춰진다  */
         /* prev 버튼과 slidewrapper 사이에 20px 공간을 준다
             주의할 점은 100%+20px 이렇게 붙이면 안돼고 위와 같이 + 양 옆으로 띄어쓰기 해야한다  */
         .next {
-            left: calc(100% + 20px);
+            left: 100%;
+            margin-left: 20px;
         }
+        /* .prev 에서 calc 쓴것과 똑같은데 마진값을 줘서 공간 만들어준 경우 */
     </style>
 </head>
 
